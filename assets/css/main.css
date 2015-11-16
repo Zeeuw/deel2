@@ -507,7 +507,8 @@ h3 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background: url(../img/face.jpg);
+    background-size: cover;
+    background-image: url(../img/face.jpg);
     order: 3; }
   .face-lockup [class^="icon-"] {
     height: 100px;
@@ -656,9 +657,6 @@ h3 {
     text-align: center;
     align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
-  @media (max-width: 750px) {
-    .thumb-container figure.thumb-unit {
-      margin: 10px 0px; } }
   .thumb-container figure.thumb-unit * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -762,7 +760,15 @@ h3 {
     position: absolute;
     left: 0px; }
   .work-container h4 {
-    margin-left: 60px; } }
+    margin-left: 60px; }
+
+  .work-load h4 {
+    margin-left: 0px; } }
+@media (max-width: 650px) {
+  .work-load h4 {
+    margin-left: 10px; }
+  .work-load p {
+    margin: 20px 10px; } }
 .section-clients {
   position: relative; }
 
@@ -893,8 +899,8 @@ h3 {
       max-width: 400px;
       margin: 0px auto; }
     .clients-belt .client-unit.active-client .client-quote {
-      left: 15px; }
-
+      left: 15px; } }
+@media (max-width: 325px) {
   .clients-logos {
     display: none; } }
 .section-contact {
@@ -935,9 +941,9 @@ h3 {
         right: 0px;
         bottom: 0px;
         left: 0px;
-        border: 2px solid #01B6AD;
+        border: 3px solid #01B6AD;
         border-radius: 50%;
-        margin: -2px;
+        margin: -1px;
         opacity: 1;
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
