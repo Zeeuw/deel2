@@ -657,6 +657,10 @@ h3 {
     text-align: center;
     align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+  @media (max-width: 880px) {
+    .thumb-container figure.thumb-unit {
+      margin: 20px auto;
+      float: none; } }
   .thumb-container figure.thumb-unit * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -754,6 +758,9 @@ h3 {
       fill: rgba(0, 0, 0, 0.4); }
     .work-container .work-return:hover {
       opacity: 1; }
+  .work-container .work-load img {
+    display: block;
+    margin: 20px auto; }
 
 @media (max-width: 750px) {
   .work-container .work-return {
